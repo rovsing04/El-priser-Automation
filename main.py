@@ -291,6 +291,9 @@ def main_functions():
         elif PEIN == "4":
             see_all()
             break
+        elif PEIN == "5":
+            see_mid()
+            break
         else:
             print("")
             print("Det er ikke en valgmulighed!")
