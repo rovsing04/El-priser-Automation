@@ -300,4 +300,4 @@ def main_functions():
             print("")
 
 
-see_mid()
+main_functions()
