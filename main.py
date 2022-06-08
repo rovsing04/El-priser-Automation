@@ -46,7 +46,7 @@ def best_of_24_hours():
             del list[0]
             del kl[0]
 
-    final = str(round(list[0] / 100, 2)).replace(".", ",")
+    final = str(round(list[0] / 100 + 0.22, 2)).replace(".", ",")
     print("")
     print("################################################")
     print("Det billigeste idag bliver kl " + kl[0] + " med " + final + "kr")
@@ -100,7 +100,7 @@ def best_of_12_hours():
             del list[0]
             del kl[0]
 
-    final = str(round(list[0] / 100, 2)).replace(".", ",")
+    final = str(round(list[0] / 100 + 0.22, 2)).replace(".", ",")
     print("")
     print("################################################")
     print("Det billigeste idag bliver kl " + kl[0] + " med " + final + "kr")
@@ -169,7 +169,7 @@ def best_under_x():
     print("################################################")
     for x in range(0, 23):
         try:
-            final = str(round(list[x] / 100, 2)).replace(".", ",")
+            final = str(round(list[x] / 100 + 0.22, 2)).replace(".", ",")
             print(kl[x] + " med " + final + "kr")
         except:
             pass
@@ -211,7 +211,7 @@ def see_all():
     print("################################################")
     for x in range(0, 24):
         try:
-            final = str(round(list[x] / 100, 2)).replace(".", ",")
+            final = str(round(list[x] / 100 + 0.22, 2)).replace(".", ",")
             print(kl[x] + " med " + final + "kr")
         except:
             pass
@@ -249,7 +249,7 @@ def see_mid():
                 element.parentNode.removeChild(element);
                 """, data)
 
-    sum = math.fsum(list)/100
+    sum = math.fsum(list)/100+0.22
     sum = round(sum / 24, 2)
 
     print("")
@@ -267,7 +267,7 @@ def menu():
     print("#######################")
     print("")
     print(" 1) Bedste pris på 24 timer      4) Se alle priser")
-    print(" 2) Bedste prist på dagen        5) Se gennemsnit")
+    print(" 2) Bedste pris på dagen        5) Se gennemsnit")
     print(" 3) Pris under x")
     print("")
     print(" q) Luk Programmet")
