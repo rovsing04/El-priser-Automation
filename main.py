@@ -262,7 +262,9 @@ def see_mid():
 
 def menu():
     print("")
-    print(" EL priser i Odense")
+    print("#######################")
+    print("# EL priser i Danmark #")
+    print("#######################")
     print("")
     print(" 1) Bedste pris på 24 timer      4) Se alle priser")
     print(" 2) Bedste prist på dagen        5) Se gennemsnit")
